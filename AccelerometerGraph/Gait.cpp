@@ -7,7 +7,9 @@
 //
 
 #include "Gait.hpp"
-#include <boost/numeric/ublas.hpp>
+#include <boost/assert.hpp>
+#include <boost/numeric/ublas/blas.hpp>
+#include <boost/numeric/ublas/lu.hpp>
 
 template <class T>
 std::vector<T> polyfit( const std::vector<T>& oX,
