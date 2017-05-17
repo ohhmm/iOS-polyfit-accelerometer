@@ -1,0 +1,6 @@
+framework module Pods_AccelerometerGraph {
+  umbrella header "Pods-AccelerometerGraph-umbrella.h"
+
+  export *
+  module * { export * }
+}
