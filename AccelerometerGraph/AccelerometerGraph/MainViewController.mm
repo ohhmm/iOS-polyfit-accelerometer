@@ -188,6 +188,10 @@
 {
     // Index 1 is to use the adaptive filter, so if selected then set useAdaptive appropriately
     enum GaitType currentGaitType = (enum GaitType)[sender selectedSegmentIndex];
+    bool needToLearn = self->gait.setGait(currentGaitType);
+    if(needToLearn){
+        
+    }
     // and update our filter and filterLabel
     //filter.adaptive = useAdaptive;
     //filterLabel.text = filter.name;

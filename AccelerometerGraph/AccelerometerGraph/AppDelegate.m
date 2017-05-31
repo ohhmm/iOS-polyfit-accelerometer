@@ -63,4 +63,14 @@
     [self.window makeKeyAndVisible];
 }
 
+int printf(const char * __restrict format, ...)
+{
+    va_list args;
+    va_start(args,format);
+    
+    NSLogv([NSString stringWithUTF8String:format], args) ;
+    va_end(args);
+    return 1;
+}
+
 @end

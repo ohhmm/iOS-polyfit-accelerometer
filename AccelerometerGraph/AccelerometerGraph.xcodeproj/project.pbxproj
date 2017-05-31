@@ -10,7 +10,6 @@
 		188D3E9A0D6D207B0076AE1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		4F7A54B646C2B229509CFF4B /* Pods_AccelerometerGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF377BA9B45352AF65E748CF /* Pods_AccelerometerGraph.framework */; };
 		53EECF1917836AAF009DA96A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53EECF1617836AAF009DA96A /* Default-568h@2x.png */; };
 		53EECF1A17836AAF009DA96A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 53EECF1717836AAF009DA96A /* Default.png */; };
 		53EECF1B17836AAF009DA96A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53EECF1817836AAF009DA96A /* Default@2x.png */; };
@@ -23,13 +22,13 @@
 		53EECF3217836AD0009DA96A /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53EECF2E17836AD0009DA96A /* MainViewController.mm */; };
 		53EECF3517836AD7009DA96A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EECF3317836AD7009DA96A /* main.m */; };
 		5D4721EC1EB38BDD00DF68C8 /* Gait.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D4721EA1EB38BDD00DF68C8 /* Gait.cpp */; };
+		5D66B8431ED9BEE30071C3A5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66B8421ED9BEE30071C3A5 /* Accelerate.framework */; };
 		5D698BAC1EC341D9004F9E21 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5D698BAB1EC341D9004F9E21 /* Podfile */; };
 		5D92B3891EBAF6EB0057BEE3 /* libarmadillo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D92B3881EBAF6EB0057BEE3 /* libarmadillo.a */; };
 		63D21B500F93E74800361BAB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D21B4F0F93E74800361BAB /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08299D12CDA1865AB40B405C /* Pods-AccelerometerGraph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccelerometerGraph.release.xcconfig"; path = "Pods/Target Support Files/Pods-AccelerometerGraph/Pods-AccelerometerGraph.release.xcconfig"; sourceTree = "<group>"; };
 		14D8295D0DB6E14B00198EC5 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,11 +53,10 @@
 		53EECF3417836AD7009DA96A /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = AccelerometerGraph/Prefix.pch; sourceTree = "<group>"; };
 		5D4721EA1EB38BDD00DF68C8 /* Gait.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gait.cpp; sourceTree = "<group>"; };
 		5D4721EB1EB38BDD00DF68C8 /* Gait.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Gait.hpp; sourceTree = "<group>"; };
+		5D66B8421ED9BEE30071C3A5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		5D698BAB1EC341D9004F9E21 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		5D92B3881EBAF6EB0057BEE3 /* libarmadillo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libarmadillo.a; sourceTree = "<group>"; };
 		63D21B4F0F93E74800361BAB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		BD22163CC69F460F5CF80610 /* Pods-AccelerometerGraph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccelerometerGraph.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccelerometerGraph/Pods-AccelerometerGraph.debug.xcconfig"; sourceTree = "<group>"; };
-		EF377BA9B45352AF65E748CF /* Pods_AccelerometerGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AccelerometerGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,27 +64,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D66B8431ED9BEE30071C3A5 /* Accelerate.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				188D3E9A0D6D207B0076AE1E /* CoreGraphics.framework in Frameworks */,
 				63D21B500F93E74800361BAB /* QuartzCore.framework in Frameworks */,
 				5D92B3891EBAF6EB0057BEE3 /* libarmadillo.a in Frameworks */,
-				4F7A54B646C2B229509CFF4B /* Pods_AccelerometerGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0608B89E3C9489AB4692B489 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BD22163CC69F460F5CF80610 /* Pods-AccelerometerGraph.debug.xcconfig */,
-				08299D12CDA1865AB40B405C /* Pods-AccelerometerGraph.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +94,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				0608B89E3C9489AB4692B489 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -136,12 +124,12 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D66B8421ED9BEE30071C3A5 /* Accelerate.framework */,
 				5D92B3881EBAF6EB0057BEE3 /* libarmadillo.a */,
 				63D21B4F0F93E74800361BAB /* QuartzCore.framework */,
 				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
-				EF377BA9B45352AF65E748CF /* Pods_AccelerometerGraph.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,12 +158,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AccelerometerGraph" */;
 			buildPhases = (
-				2A85F1C56895196805759232 /* [CP] Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				2B8E06691F1AD5C0B26142C4 /* [CP] Embed Pods Frameworks */,
-				C8467D5CD81B478F757F12E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,54 +222,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2A85F1C56895196805759232 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2B8E06691F1AD5C0B26142C4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AccelerometerGraph/Pods-AccelerometerGraph-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C8467D5CD81B478F757F12E1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AccelerometerGraph/Pods-AccelerometerGraph-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -331,7 +268,6 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD22163CC69F460F5CF80610 /* Pods-AccelerometerGraph.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -345,7 +281,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AccelerometerGraph/Prefix.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/AccelerometerGraph/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -368,7 +304,6 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08299D12CDA1865AB40B405C /* Pods-AccelerometerGraph.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -380,7 +315,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AccelerometerGraph/Prefix.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/AccelerometerGraph/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
