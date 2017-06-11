@@ -21,6 +21,7 @@
 		53EECF3117836AD0009DA96A /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EECF2C17836AD0009DA96A /* GraphView.m */; };
 		53EECF3217836AD0009DA96A /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53EECF2E17836AD0009DA96A /* MainViewController.mm */; };
 		53EECF3517836AD7009DA96A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EECF3317836AD7009DA96A /* main.m */; };
+		5D1D80211EE5293300762B87 /* StringTransition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D801F1EE5293300762B87 /* StringTransition.cpp */; };
 		5D4721EC1EB38BDD00DF68C8 /* Gait.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D4721EA1EB38BDD00DF68C8 /* Gait.cpp */; };
 		5D66B8431ED9BEE30071C3A5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66B8421ED9BEE30071C3A5 /* Accelerate.framework */; };
 		5D698BAC1EC341D9004F9E21 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5D698BAB1EC341D9004F9E21 /* Podfile */; };
@@ -51,6 +52,8 @@
 		53EECF2E17836AD0009DA96A /* MainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MainViewController.mm; path = AccelerometerGraph/MainViewController.mm; sourceTree = "<group>"; };
 		53EECF3317836AD7009DA96A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AccelerometerGraph/main.m; sourceTree = "<group>"; };
 		53EECF3417836AD7009DA96A /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = AccelerometerGraph/Prefix.pch; sourceTree = "<group>"; };
+		5D1D801F1EE5293300762B87 /* StringTransition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringTransition.cpp; sourceTree = "<group>"; };
+		5D1D80201EE5293300762B87 /* StringTransition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StringTransition.hpp; sourceTree = "<group>"; };
 		5D4721EA1EB38BDD00DF68C8 /* Gait.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gait.cpp; sourceTree = "<group>"; };
 		5D4721EB1EB38BDD00DF68C8 /* Gait.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Gait.hpp; sourceTree = "<group>"; };
 		5D66B8421ED9BEE30071C3A5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -147,6 +150,8 @@
 				53EECF2C17836AD0009DA96A /* GraphView.m */,
 				5D4721EA1EB38BDD00DF68C8 /* Gait.cpp */,
 				5D4721EB1EB38BDD00DF68C8 /* Gait.hpp */,
+				5D1D801F1EE5293300762B87 /* StringTransition.cpp */,
+				5D1D80201EE5293300762B87 /* StringTransition.hpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1D80211EE5293300762B87 /* StringTransition.cpp in Sources */,
 				5D4721EC1EB38BDD00DF68C8 /* Gait.cpp in Sources */,
 				53EECF2F17836AD0009DA96A /* AccelerometerFilter.m in Sources */,
 				53EECF3017836AD0009DA96A /* AppDelegate.m in Sources */,

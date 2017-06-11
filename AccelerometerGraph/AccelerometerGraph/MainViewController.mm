@@ -105,8 +105,8 @@
     [_gaitTypeChooser setTitle:@"graze" forSegmentAtIndex:1];
     [_gaitTypeChooser insertSegmentWithTitle:@"walk" atIndex:2 animated:YES];
     [_gaitTypeChooser insertSegmentWithTitle:@"trot" atIndex:3 animated:YES];
-    [_gaitTypeChooser insertSegmentWithTitle:@"cantor" atIndex:2 animated:YES];
-    [_gaitTypeChooser insertSegmentWithTitle:@"galoop" atIndex:3 animated:YES];
+    [_gaitTypeChooser insertSegmentWithTitle:@"cantor" atIndex:4 animated:YES];
+    [_gaitTypeChooser insertSegmentWithTitle:@"galoop" atIndex:5 animated:YES];
 }
 
 // UIAccelerometerDelegate method, called when the device accelerates.
@@ -191,6 +191,35 @@
     bool needToLearn = self->gait.setGait(currentGaitType);
     if(needToLearn){
         
+        NSURL *url = [NSURL URLWithString:@"http://dasplast-filament.rhcloud.com"];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+        [request setHTTPMethod:@"POST"];
+        
+        //Create POST Params and add it to HTTPBody
+        NSString *data = [NSString stringWithUTF8String:self->gait.getLearningData().c_str()];
+       
+        NSData *encodeData = [data dataUsingEncoding:NSUTF8StringEncoding];
+        NSString *base64String = [encodeData base64EncodedStringWithOptions:0];
+        NSLog(@"Encode String Value: %@", base64String);
+
+        NSString *params = [NSString stringWithFormat:@"DATA=%@", base64String];
+        [request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
+
+        NSURLResponse *response;
+        NSError *err;
+        NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
+        NSLog(@"status: %@; responseData: %@", err, responseData);
+        NSString *str = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+        NSLog(@"responseData: %@", str);
+//        NSDictionary* json = [NSJSONSerialization JSONObjectWithData:responseData
+//                                                             options:kNilOptions
+//                                                               error:nil];
+        
+//        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+//        [request setHTTPMethod:@"POST"];
+//        [request setValue:@"application/x-www-form-urlencoded; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+//        NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+//        [request setHTTPBody:[NSString stringWithUTF8String:self->gait.getLearningData().c_str()]];
     }
     // and update our filter and filterLabel
     //filter.adaptive = useAdaptive;
